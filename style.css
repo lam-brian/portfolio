@@ -527,19 +527,17 @@ img {
   font-size: 2rem;
 }
 
+.contact__message {
+  margin-bottom: 1.2rem;
+}
+
 .contact__email {
   font-size: 1.8rem;
   font-weight: var(--fw-light);
-  margin-bottom: 1.2rem;
 }
 
 .contact__icon {
   color: var(--blue-primary);
-}
-
-.contact__message {
-  line-height: 1.2;
-  max-width: 50rem;
 }
 
 .contact__form {
@@ -576,4 +574,9 @@ img {
   padding: 1.6rem;
   border-radius: 1rem;
   cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.contact__form-btn:hover {
+  background-color: var(--blue-tint);
 }
