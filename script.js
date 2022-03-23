@@ -27,3 +27,14 @@ const waveAnimate = function () {
 };
 
 window.addEventListener("load", waveAnimate);
+
+// Mobile Navigation
+
+const hamburgerBtn = document.querySelector(".hamburger");
+
+const openNav = function () {
+  hamburgerBtn.classList.toggle("is-active");
+  nav.classList.toggle("nav-open");
+};
+
+hamburgerBtn.addEventListener("click", openNav);
