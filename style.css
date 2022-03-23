@@ -280,9 +280,14 @@ img {
 .hero__wave svg {
   position: relative;
   display: block;
-  width: calc(100% + 1.3px);
+  width: calc(200% + 1.3px);
   height: 250px;
   transform: rotateY(180deg);
+  transition: width 3s ease-in-out;
+}
+
+.hero__wave .wave {
+  width: calc(100% + 1.3px);
 }
 
 .hero__wave .shape-fill {
