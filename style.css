@@ -121,6 +121,7 @@ img {
   padding: 2.4rem;
   overflow: hidden;
   transition: all 0.3s ease-out;
+  cursor: pointer;
 }
 
 .header__logo:hover {
@@ -138,8 +139,7 @@ img {
   transition: all 0.3s ease-out;
 }
 
-.header__home-link:hover,
-.header__home-link:active {
+.header__logo:hover .header__home-link {
   color: var(--blue-tint);
 }
 
