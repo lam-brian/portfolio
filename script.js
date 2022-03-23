@@ -2,6 +2,8 @@
 
 const heroSection = document.querySelector(".hero__section");
 const nav = document.querySelector(".header__nav");
+const hamburgerBtn = document.querySelector(".hamburger");
+const navLinks = document.querySelectorAll(".header__link");
 
 // Stick nav
 const navHeight = nav.getBoundingClientRect().height;
@@ -30,11 +32,13 @@ window.addEventListener("load", waveAnimate);
 
 // Mobile Navigation
 
-const hamburgerBtn = document.querySelector(".hamburger");
-
 const openNav = function () {
   hamburgerBtn.classList.toggle("is-active");
   nav.classList.toggle("nav-open");
 };
 
 hamburgerBtn.addEventListener("click", openNav);
+
+navLinks.forEach((link) =>
+  link.addEventListener("click", () => nav.classList.remove("nav-open"))
+);
