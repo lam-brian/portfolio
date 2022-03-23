@@ -302,9 +302,9 @@ img {
   position: relative;
   display: block;
   width: calc(200% + 1.3px);
-  height: 250px;
+  height: 320px;
   transform: rotateY(180deg);
-  transition: width 3s ease-out;
+  transition: width 1.5s ease-out;
 }
 
 .hero__wave .wave {

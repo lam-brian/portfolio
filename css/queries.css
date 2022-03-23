@@ -34,6 +34,10 @@
     height: 5rem;
   }
 
+  .hero__wave svg {
+    height: 250px;
+  }
+
   .about__container,
   .projects__container {
     max-width: 112rem;
