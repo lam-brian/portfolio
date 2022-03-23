@@ -120,6 +120,11 @@ img {
   border-radius: 50%;
   padding: 2.4rem;
   overflow: hidden;
+  transition: all 0.3s ease-out;
+}
+
+.header__logo:hover {
+  border-color: var(--blue-tint);
 }
 
 .header__home-link:link,
@@ -130,6 +135,12 @@ img {
   font-size: 3rem;
   font-weight: var(--fw-medium);
   padding: 1.4rem;
+  transition: all 0.3s ease-out;
+}
+
+.header__home-link:hover,
+.header__home-link:active {
+  color: var(--blue-tint);
 }
 
 .header__link:link,
