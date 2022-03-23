@@ -88,7 +88,6 @@ img {
 
 .header {
   background-color: var(--blue-tint-lightest);
-  padding: 0 4.8rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -97,10 +96,18 @@ img {
 }
 
 .header__nav {
+  padding: 0 4.8rem;
   height: 9.6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header__nav.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 100%;
+  z-index: 9999;
 }
 
 .header__list {
@@ -183,6 +190,7 @@ img {
   margin: 9.6rem auto;
   padding: 0 3.2rem;
   gap: 3.2rem;
+  position: relative;
   z-index: 999;
 }
 
@@ -283,9 +291,14 @@ img {
 .hero__wave svg {
   position: relative;
   display: block;
-  width: calc(100% + 1.3px);
+  width: calc(200% + 1.3px);
   height: 250px;
   transform: rotateY(180deg);
+  transition: width 3s ease-in-out;
+}
+
+.hero__wave .wave {
+  width: calc(100% + 1.3px);
 }
 
 .hero__wave .shape-fill {
