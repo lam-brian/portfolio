@@ -38,7 +38,4 @@ const openNav = function () {
 };
 
 hamburgerBtn.addEventListener("click", openNav);
-
-navLinks.forEach((link) =>
-  link.addEventListener("click", () => nav.classList.remove("nav-open"))
-);
+navLinks.forEach((link) => link.addEventListener("click", openNav));
