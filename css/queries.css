@@ -259,6 +259,10 @@
     padding: 0 1.6rem;
   }
 
+  .hero__container {
+    padding: 0;
+  }
+
   .hero__socials {
     left: 3.2rem;
   }
