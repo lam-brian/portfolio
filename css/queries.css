@@ -140,7 +140,7 @@
     height: 20%;
   }
 
-  .projects__container {
+  .project {
     column-gap: 4.8rem;
   }
 
@@ -231,16 +231,24 @@
     width: 50%;
   }
 
-  .projects__container {
-    grid-template-columns: 1fr;
-  }
-
   .skills__logos {
     max-width: 30rem;
   }
 
   .contact__container {
     padding: 0 2rem;
+  }
+}
+
+@media (max-width: 42em) {
+  .project {
+    grid-template-columns: 1fr;
+    row-gap: 3.2rem;
+  }
+
+  .project__img-link {
+    grid-row: 2;
+    height: 35rem;
   }
 }
 
@@ -265,5 +273,10 @@
 
   .hero__background {
     height: 45%;
+  }
+
+  .project__img-link {
+    grid-row: 2;
+    height: 25rem;
   }
 }
