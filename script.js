@@ -39,3 +39,7 @@ const openNav = function () {
 
 hamburgerBtn.addEventListener("click", openNav);
 navLinks.forEach((link) => link.addEventListener("click", openNav));
+
+// Footer year
+const year = document.querySelector(".footer__year");
+year.textContent = new Date().getFullYear();
