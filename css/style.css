@@ -437,15 +437,15 @@ img {
 }
 
 .project__img-link {
-  height: 30rem;
   display: inline-block;
-  border-radius: 1rem;
-  overflow: hidden;
+  border-radius: 1.2rem;
 }
 
 .project__img-link img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
+  border-radius: 1.2rem;
 }
 
 /* ----------Skills section----------- */

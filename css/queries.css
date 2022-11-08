@@ -248,7 +248,6 @@
 
   .project__img-link {
     grid-row: 2;
-    height: 35rem;
   }
 }
 
@@ -281,6 +280,5 @@
 
   .project__img-link {
     grid-row: 2;
-    height: 25rem;
   }
 }
