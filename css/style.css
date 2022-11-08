@@ -445,7 +445,7 @@ img {
 
 .project__img-link img {
   height: 100%;
-  transition: all 0.2s ease-out;
+  width: 100%;
 }
 
 /* ----------Skills section----------- */
