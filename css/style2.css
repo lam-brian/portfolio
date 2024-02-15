@@ -130,3 +130,53 @@ button {
   font-size: 2rem;
   color: #1c1c1c;
 }
+
+.flex {
+}
+
+.wave {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 3.2rem;
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.text:nth-child(1) {
+}
+
+.text:nth-child(2) {
+  color: var(--color-primary);
+  clip-path: polygon(
+    0% 57%,
+    8% 53%,
+    15% 48%,
+    23% 43%,
+    29% 36%,
+    39% 33%,
+    47% 34%,
+    55% 42%,
+    58% 50%,
+    66% 57%,
+    79% 52%,
+    85% 48%,
+    93% 41%,
+    100% 31%,
+    99% 99%,
+    0% 100%
+  );
+}
+
+@keyframes water {
+}
+
+@keyframes fill {
+}
