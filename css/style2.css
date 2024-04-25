@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
 
 :root {
-  --main-background-color: #1a1a1a;
-  --background-color-tint: #262626;
-  --color-primary: #4dabf7;
-  --color-neutral: #fff;
+  --color-primary: #71c4f4;
+  --color-dark: #1a1a1a;
+  --color-dark-tint: #1c1c1c;
+  --color-dark-tint2: #262626;
+  --color-neutral: #ffffff;
   --color-neutral-shade: #b3b3b3;
+  --border-color: #383737;
 }
 
 html {
@@ -25,8 +27,8 @@ html {
 }
 
 body {
-  background-color: var(--main-background-color, #1a1a1a);
-  color: var(--color-neutral, #fff);
+  background-color: var(--color-dark);
+  color: var(--color-neutral);
   line-height: 1;
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
@@ -47,13 +49,48 @@ button {
   background: none;
 }
 
+.section {
+  margin: 0 auto;
+  width: min(95%, 130rem);
+  padding: 9.6rem 0;
+}
+
+.btn {
+  border: 1px solid var(--border-color);
+  background-color: var(--color-dark-tint2);
+  padding: 0.8em 1.6em;
+  border-radius: 50px;
+  color: var(--color-neutral);
+  font-size: 1.6rem;
+  transition: all 0.3s ease-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+}
+
+.btn--primary:hover {
+  box-shadow: 0 2px 10px 1px var(--color-primary);
+  border: none;
+}
+
+/* --------------- HEADER --------------- */
+
 .header {
-  border: 1px solid #383737;
+  position: absolute;
+  top: 2.5rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: min(95%, 130rem);
+  border: 1px solid var(--border-color);
   border-radius: 100px;
-  background: #1c1c1c;
-  margin: 2.4rem auto 0;
-  padding: 1.2rem 2.4rem;
-  width: 80%;
+  background: var(--color-dark-tint);
+  padding: 1rem 2rem;
 }
 
 .nav {
@@ -65,7 +102,7 @@ button {
 .nav__logo {
   transition: all 0.3s ease-out;
   border-radius: 50%;
-  border: 3px solid var(--color-neutral, #fff);
+  border: 3px solid var(--color-neutral);
   width: 5.6rem;
   height: 5.6rem;
 }
@@ -128,55 +165,44 @@ button {
   width: 100%;
   height: 100%;
   font-size: 2rem;
-  color: #1c1c1c;
+  color: var(--color-dark-tint);
 }
 
-.flex {
-}
-
-.wave {
+/* --------------- HERO --------------- */
+.hero {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
-  font-size: 3.2rem;
-  position: relative;
+  gap: 4.8rem;
+  margin-top: 16rem;
+  border-bottom: 1px solid var(--border-color);
 }
 
-.text {
-  position: absolute;
-  font-size: 4rem;
-  font-weight: bold;
+.hero__content .hero__title {
+  font-size: 6.4rem;
+  margin-bottom: 3.2rem;
 }
 
-.text:nth-child(1) {
-}
-
-.text:nth-child(2) {
+.hero__content .hero__title span {
   color: var(--color-primary);
-  clip-path: polygon(
-    0% 57%,
-    8% 53%,
-    15% 48%,
-    23% 43%,
-    29% 36%,
-    39% 33%,
-    47% 34%,
-    55% 42%,
-    58% 50%,
-    66% 57%,
-    79% 52%,
-    85% 48%,
-    93% 41%,
-    100% 31%,
-    99% 99%,
-    0% 100%
-  );
 }
 
-@keyframes water {
+.hero__content .hero__text {
+  color: var(--color-neutral-shade);
+  font-size: 2.4rem;
+  line-height: 1.5;
+  margin-bottom: 3.2rem;
 }
 
-@keyframes fill {
+.hero__btns {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.hero__img {
+  flex: 1 0 45%;
+}
+
+.hero__img img {
+  width: 100%;
+  height: 100%;
 }
