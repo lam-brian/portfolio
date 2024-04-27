@@ -11,7 +11,6 @@
 }
 
 html {
-  font-size: 62.5%;
   box-sizing: border-box;
 }
 
@@ -30,7 +29,6 @@ body {
   background-color: var(--color-dark);
   color: var(--color-neutral);
   line-height: 1;
-  font-size: 1.6rem;
   font-family: "Inter", sans-serif;
 }
 
@@ -49,19 +47,26 @@ button {
   background: none;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .section {
   margin: 0 auto;
-  width: min(95%, 130rem);
-  padding: 9.6rem 0;
+  width: min(95%, 80rem);
+  padding: 6rem 0;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .btn {
   border: 1px solid var(--border-color);
   background-color: var(--color-dark-tint2);
-  padding: 0.8em 1.6em;
+  padding: 0.9em 1.8em;
   border-radius: 50px;
   color: var(--color-neutral);
-  font-size: 1.6rem;
+  font-size: 1em;
   transition: all 0.3s ease-out;
 }
 
@@ -79,18 +84,22 @@ button {
   border: none;
 }
 
+.title > span {
+  color: var(--color-primary);
+}
+
 /* --------------- HEADER --------------- */
 
 .header {
   position: absolute;
-  top: 2.5rem;
+  top: 1.6rem;
   left: 50%;
   transform: translate(-50%, 0);
-  width: min(95%, 130rem);
+  width: min(95%, 80rem);
   border: 1px solid var(--border-color);
   border-radius: 100px;
   background: var(--color-dark-tint);
-  padding: 1rem 2rem;
+  padding: 0.6rem 1.2rem;
 }
 
 .nav {
@@ -103,8 +112,8 @@ button {
   transition: all 0.3s ease-out;
   border-radius: 50%;
   border: 3px solid var(--color-neutral);
-  width: 5.6rem;
-  height: 5.6rem;
+  width: 3.4rem;
+  height: 3.4rem;
 }
 
 .nav__logo:hover {
@@ -119,19 +128,19 @@ button {
   width: 100%;
   height: 100%;
   color: inherit;
-  font-size: 2.4rem;
+  font-size: 1.5em;
 }
 
 .nav__links {
   display: flex;
   gap: 3.2rem;
-  font-size: 1.8rem;
 }
 
 .nav__links .nav__link:link,
 .nav__links .nav__link:visited {
   transition: all 0.3s ease-out;
   color: inherit;
+  font-size: 1.25em;
 }
 
 .nav__links .nav__link:hover,
@@ -141,15 +150,15 @@ button {
 
 .nav__socials {
   display: flex;
-  gap: 1.2rem;
+  gap: 0.8rem;
 }
 
 .nav__socials li {
   transition: all 0.3s ease-out;
   border-radius: 50%;
   background-color: var(--color-primary);
-  width: 3.8rem;
-  height: 3.8rem;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 .nav__socials li:hover {
@@ -164,45 +173,87 @@ button {
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  font-size: 2rem;
+  font-size: 1.25em;
   color: var(--color-dark-tint);
 }
 
 /* --------------- HERO --------------- */
+
 .hero {
   display: flex;
   align-items: center;
-  gap: 4.8rem;
-  margin-top: 16rem;
-  border-bottom: 1px solid var(--border-color);
+  justify-content: center;
+  height: 100vh;
+  gap: 3rem;
+  margin-top: 2.4rem;
 }
 
 .hero__content .hero__title {
-  font-size: 6.4rem;
-  margin-bottom: 3.2rem;
-}
-
-.hero__content .hero__title span {
-  color: var(--color-primary);
+  font-size: 4em;
+  margin-bottom: 2rem;
 }
 
 .hero__content .hero__text {
   color: var(--color-neutral-shade);
-  font-size: 2.4rem;
+  font-size: 1.5em;
   line-height: 1.5;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2rem;
 }
 
 .hero__btns {
   display: flex;
-  gap: 1.6rem;
+  gap: 1em;
 }
 
 .hero__img {
   flex: 1 0 45%;
 }
 
-.hero__img img {
-  width: 100%;
-  height: 100%;
+/* --------------- PROJECTS --------------- */
+
+.projects__title {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2em;
+}
+
+.projects__list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.projects__list .project {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background-color: var(--color-dark-tint);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 4rem;
+  overflow: hidden;
+}
+
+.project__content {
+  flex: 0 0 50%;
+}
+
+.project__title {
+  margin-bottom: 1rem;
+  font-size: 2em;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.project__description {
+  margin-bottom: 3rem;
+  color: var(--color-neutral-shade);
+  line-height: 1.5;
+  font-size: 1.2em;
+}
+
+.project__img {
+  height: 30%;
+  width: 30%;
+  transform: scale(1.5) rotate(-10deg) translate(25%, 10%);
 }

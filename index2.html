@@ -13,6 +13,7 @@
     <script src="script2.js" defer></script>
   </head>
   <body>
+    <!------------------ HEADER ------------------>
     <header class="header">
       <nav class="nav">
         <div class="nav__logo">
@@ -62,22 +63,74 @@
         </ul>
       </nav>
     </header>
+
     <main>
+      <!------------------ HEADER ------------------>
       <section class="section hero">
         <div class="hero__content">
-          <h1 class="hero__title">Hi, I'm <span>Brian!</span></h1>
+          <h1 class="hero__title title">Hi, I'm <span>Brian!</span></h1>
           <p class="hero__text">
             Turning complex problems into beautiful solutions. <br />
-            Front-End Developer with a results-oriented approach.
+            Front End Developer with a passion for accessible design.
           </p>
           <div class="hero__btns">
-            <button class="btn">Get in touch</button>
             <button class="btn btn--primary">View my resume</button>
+            <button class="btn">Get in touch</button>
           </div>
         </div>
         <div class="hero__img">
           <img src="images/coding.svg" alt="man coding" />
         </div>
+      </section>
+
+      <section class="section projects">
+        <h1 class="projects__title title">
+          Check out some of my <span>work!</span>
+        </h1>
+        <ul class="projects__list">
+          <li class="project">
+            <div class="project__content">
+              <h2 class="project__title">
+                RideFair - Protect user privacy & control with a decentralized
+                ride-sharing app.
+              </h2>
+              <p class="project__description">
+                Developed using Next.js and Tailwind.css for the front end while
+                utilizing Web5 technology to secure and decentralize user data.
+              </p>
+              <button class="btn">
+                Source Code <i class="fa-brands fa-github"></i>
+              </button>
+            </div>
+            <div class="project__img">
+              <img
+                src="assets/images/ride-fair-img.png"
+                alt="RideFair project"
+              />
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__content">
+              <h2 class="project__title">
+                RideFair - Protect user privacy & control with a decentralized
+                ride-sharing app.
+              </h2>
+              <p class="project__description">
+                Developed using Next.js and Tailwind.css for the front end while
+                utilizing Web5 technology to secure and decentralize user data.
+              </p>
+              <button class="project__btn btn">
+                Source Code <i class="fa-brands fa-github"></i>
+              </button>
+            </div>
+            <div class="project__img">
+              <img
+                src="assets/images/simplify-img.png"
+                alt="RideFair project"
+              />
+            </div>
+          </li>
+        </ul>
       </section>
     </main>
   </body>
