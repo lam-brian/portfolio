@@ -111,6 +111,12 @@ img {
   padding: 0.6rem 1.2rem;
 }
 
+.header.sticky {
+  position: fixed;
+  z-index: 9999;
+  animation: fade-in 0.3s ease-in;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -410,4 +416,14 @@ img {
   padding: 1.6rem;
   text-align: center;
   color: var(--color-neutral-shade);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.9;
+  }
 }
