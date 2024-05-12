@@ -135,15 +135,15 @@ img {
   border-radius: 100px;
   background: var(--color-dark-tint);
   margin: 1.6rem auto;
-  padding: 0.6rem 1.2rem;
+  padding: 0.6em 1.2em;
 }
 
 .nav__logo {
   transition: all 0.3s ease-out;
   border-radius: 50%;
   border: 3px solid var(--color-neutral);
-  width: 3.4rem;
-  height: 3.4rem;
+  width: 3.4em;
+  height: 3.4em;
 }
 
 .nav__logo:hover {
@@ -402,7 +402,7 @@ img {
   border: 1px solid var(--border-color);
   border-radius: 100px;
   background: var(--color-dark-tint);
-  padding: 1.6rem;
+  padding: 1.6em;
   text-align: center;
   color: var(--color-neutral-shade);
 }
