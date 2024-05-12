@@ -279,19 +279,11 @@ img {
 
 /* --------------- ABOUT --------------- */
 
-.about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 1.5rem;
-  row-gap: 5rem;
-  align-items: start;
-}
-
 .about__info {
-  grid-column: span 2;
   display: flex;
   align-items: center;
   gap: 6rem;
+  margin-bottom: 5rem;
 }
 
 .about__img {
@@ -323,15 +315,13 @@ img {
   gap: 1rem;
 }
 
-.about__skills,
-.about__experiences {
+.about__skills {
   border: 1px solid var(--border-color);
   padding: 1.6rem;
   border-radius: 10px;
 }
 
-.about__skills .about__title,
-.about__experiences .about__title {
+.about__skills .about__title {
   text-align: center;
 }
 
@@ -356,53 +346,6 @@ img {
 .skills__text {
   color: var(--color-neutral-shade);
   line-height: 1.5;
-}
-
-.experiences__item {
-  display: flex;
-  justify-content: space-between;
-}
-
-.experiences__date {
-  flex: 1 0 42%;
-  font-size: 1.1em;
-}
-
-.experiences__timeline {
-  flex: 1 0 8%;
-  position: relative;
-}
-
-.experiences__timeline .line {
-  background-color: var(--border-color);
-  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.05);
-  width: 2px;
-  height: 100%;
-  transform: translateX(-50%);
-}
-
-.experiences__timeline .dot {
-  background-color: var(--color-primary);
-  height: 1em;
-  width: 1em;
-  border-radius: 50%;
-  border: 1px solid var(--border-color);
-  position: absolute;
-  top: 0;
-  transform: translate(-50%, -1px);
-}
-
-.experiences__job {
-  flex: 1 0 50%;
-  padding-bottom: 1.4rem;
-}
-
-.experiences__title {
-  font-size: 1.1em;
-}
-
-.experiences__text {
-  color: var(--color-neutral-shade);
 }
 
 /* --------------- FOOTER ---------------- */
