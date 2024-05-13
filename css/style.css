@@ -273,6 +273,11 @@ img {
   gap: 1rem;
 }
 
+.hero__img {
+  position: relative;
+  z-index: -999;
+}
+
 .hero__img img {
   transform: translateY(5px);
 }
