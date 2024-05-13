@@ -4,7 +4,7 @@ const heroSection = document.querySelector(".hero");
 const header = document.querySelector(".header");
 const nav = document.querySelector(".nav");
 const hamburgerBtn = document.querySelector(".hamburger");
-const navLinks = document.querySelectorAll(".nav__links");
+const mobileNavLinks = document.querySelectorAll(".nav__mobile-links a");
 
 // Sticky header
 const headerHeight = header.getBoundingClientRect().height;
@@ -29,7 +29,7 @@ const openNav = function () {
 };
 
 hamburgerBtn.addEventListener("click", openNav);
-navLinks.forEach((link) => link.addEventListener("click", openNav));
+mobileNavLinks.forEach((link) => link.addEventListener("click", openNav));
 
 // Footer year
 const year = document.querySelector(".footer__year");
