@@ -2,107 +2,129 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Brian Lam's portfolio Site" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://www.brianlam.dev/assets/images/open-graph-preview.png"
+    />
+    <meta property="og:url" content="https://www.brianlam.dev/" />
     <meta
       name="description"
-      content="Brian Lam, a Front-end developer specializing in React with a strong knowledge of JavaScript and web standards such as HTML and CSS."
+      property="og:description"
+      content="Brian Lam, a Front End Developer specializing in React with a passion for accessible designs and turning complex problems into beautiful solutions."
     />
     <meta name="keyword" content="portfolio, javascript, react, developer" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="images/apple-touch-icon.png"
+      href="/assets/favicons/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="images/favicon-32x32.png"
+      href="/assets/favicons/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="images/favicon-16x16.png"
+      href="/assets/favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/assets/favicons/safari-pinned-tab.svg"
+      color="#333333"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#333333" />
     <link rel="stylesheet" href="css/hamburger.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
     <script
       defer
       src="https://kit.fontawesome.com/e539d5826b.js"
       crossorigin="anonymous"
     ></script>
-    <script defer src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Brian Lam</title>
   </head>
   <body>
-    <!-- HEADER -->
+    <!------------------ HEADER ------------------>
     <header class="header">
-      <nav class="header__nav">
-        <div class="header__logo">
-          <a class="header__home-link" href="#">B</a>
+      <nav class="nav">
+        <div class="nav__logo">
+          <a class="nav__link" href="#" aria-label="go to home">B</a>
         </div>
-        <ul class="header__list">
-          <li><a class="header__link" href="#about">About</a></li>
-          <li><a class="header__link" href="#projects">Projects</a></li>
-          <li><a class="header__link" href="#skills">Skills</a></li>
-          <li><a class="header__link" href="#contact">Contact</a></li>
+
+        <ul class="nav__links">
+          <li><a class="nav__link" href="#">Home</a></li>
+          <li><a class="nav__link" href="#work">Work</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+        </ul>
+
+        <ul class="nav__socials">
           <li>
             <a
-              class="header__link header__link--button"
-              href="images/brian-resume.pdf"
+              href="mailto:lambrian0206@gmail.com"
+              aria-label="Email to lambrian0206@gmail.com"
+              class="social__link"
               target="_blank"
               rel="noreferrer"
-              >Resume</a
             >
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/brian-lam-dev/"
+              aria-label="LinkedIn"
+              class="social__link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/lam-brian"
+              aria-label="Github"
+              class="social__link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
           </li>
         </ul>
-        <button class="hamburger hamburger--spin" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
-      </nav>
-    </header>
-    <main>
-      <!-- HERO SECTION -->
-      <section class="hero__section section">
-        <div class="hero__container grid--2col">
-          <div class="hero__text-box">
-            <span class="hero__subheading">Hi, my name is</span>
-            <h1 class="hero__heading">Brian Lam</h1>
-            <h2 class="hero__heading--secondary">Front-end Developer</h2>
-            <p class="hero__description">
-              Self-driven developer with a passion and desire to work on
-              front-end applications used by millions across the world
-            </p>
-            <a class="hero__btn" href="#contact">Contact Me</a>
-          </div>
-          <div class="hero__img">
-            <img src="images/coding.svg" alt="person coding" />
-          </div>
-        </div>
-        <div class="hero__socials">
-          <ul class="hero__list">
+
+        <div class="nav__mobile-links">
+          <ul class="nav__links">
+            <li><a class="nav__link" href="#">Home</a></li>
+            <li><a class="nav__link" href="#work">Work</a></li>
+            <li><a class="nav__link" href="#about">About</a></li>
+          </ul>
+
+          <ul class="nav__socials">
             <li>
               <a
-                href="https://github.com/lam-brian"
-                aria-label="Github"
-                class="hero__link"
+                href="mailto:lambrian0206@gmail.com"
+                aria-label="Email to lambrian0206@gmail.com"
+                class="social__link"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class="fa-brands fa-github-square"></i>
+                <i class="fa-solid fa-envelope"></i>
               </a>
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/brian-lam-b20572172/"
+                href="https://www.linkedin.com/in/brian-lam-dev/"
                 aria-label="LinkedIn"
-                class="hero__link"
+                class="social__link"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -111,323 +133,182 @@
             </li>
             <li>
               <a
-                href="mailto:lambrian0206@gmail.com"
-                aria-label="Email to lambrian0206@gmail.com"
-                class="hero__link"
+                href="https://github.com/lam-brian"
+                aria-label="Github"
+                class="social__link"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class="fa-solid fa-square-envelope"></i>
+                <i class="fa-brands fa-github"></i>
               </a>
             </li>
           </ul>
         </div>
-        <div class="hero__background">&nbsp;</div>
-        <div class="hero__wave">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-              class="shape-fill"
-            ></path>
-          </svg>
-        </div>
-      </section>
-      <!-- ABOUT SECTION -->
-      <section class="about__section section" id="about">
-        <div class="about__title title--lines">
-          <h2 class="about__heading heading">About Me</h2>
-        </div>
-        <div class="about__container grid--2col">
-          <div class="about__text-box">
-            <p>
-              Hello world! My name is Brian and I graduated from the University
-              of California, Irvine, with a degree in Business Economics and a
-              focus in accounting. After completing an internship at an
-              accounting firm, I realized I wasn't passionate about what I was
-              doing and decided to change careers.
-            </p>
-            <p>
-              I switched to software engineering and I haven't looked back ever
-              since. The countless amount of technologies out there to learn and
-              mess around with is exciting. I specialize in building dynamic
-              websites using JavaScript or React and creating a pleasant user
-              experience.
-            </p>
-            <p>
-              When I'm not coding, I enjoy spending my free time watching new
-              shows on Netflix or playing video games such as Valorant and
-              League of Legends.
-            </p>
-          </div>
-          <div class="about__img">
-            <img src="images/computer.svg" alt="person using the computer" />
-          </div>
-        </div>
-      </section>
-      <!-- PROJECTS SECTION -->
-      <section class="projects__section section" id="projects">
-        <div class="projects__title title--lines">
-          <h2 class="projects__heading heading">Projects</h2>
-        </div>
-        <div class="projects__container">
-          <!-- project 1 -->
-          <div class="project grid--2col">
-            <div class="project__text-box">
-              <h3 class="project__name">
-                <a
-                  href="https://simplify-apiworlds.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  >Simplify</a
-                >
-              </h3>
-              <p class="project__technologies">
-                <span>Technologies Used: </span>React, Node.js, Express, MySQL
-              </p>
-              <p class="project__description">
-                Won 1st place for the 2022
-                <a
-                  href="https://devpost.com/software/simplify-82ux9o"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  API World Hackathon</a
-                >
-                for the APILayer challenge with this full stack application that
-                summarizes text and automatically generates flashcards to
-                streamline the studying process for students.
-              </p>
 
-              <a
-                class="project__link"
-                href="https://github.com/lam-brian/API-World"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i class="fa-brands fa-github"></i> Source Code
-              </a>
-            </div>
-            <a
-              class="project__img-link"
-              href="https://simplify-apiworlds.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="images/projects/simplify.svg"
-                alt="Simplify live site"
-              />
-            </a>
-          </div>
-          <!-- project 2 -->
-          <div class="project grid--2col">
-            <a
-              class="project__img-link"
-              href="https://animix-app.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="images/projects/animix.svg" alt="AniMix live site" />
-            </a>
-            <div class="project__text-box">
-              <h3 class="project__name">
-                <a
-                  href="https://animix-app.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  >AniMix</a
-                >
-              </h3>
-              <p class="project__technologies">
-                <span>Technologies Used: </span>React, React-Router, Redux,
-                Firebase
-              </p>
-              <p class="project__description">
-                A single page application used to search for anime and to
-                personally create your own list of anime favorites. Make your
-                own account to start favoriting or use this test account to try
-                it out! <br />
-                <span>email: </span>test@test.com <br />
-                <span>pass: </span>123456
-              </p>
+        <button class="hamburger hamburger--spin" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </nav>
+    </header>
 
-              <a
-                class="project__link"
-                href="https://github.com/lam-brian/AniMix"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i class="fa-brands fa-github"></i> Source Code
-              </a>
-            </div>
-          </div>
-          <!-- project 3 -->
-          <div class="project grid--2col">
-            <div class="project__text-box">
-              <h3 class="project__name">
-                <a
-                  href="https://hungrify.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  >Hungrify</a
-                >
-              </h3>
-              <p class="project__technologies">
-                <span>Technologies Used: </span>HTML, CSS, JavaScript
-              </p>
-              <p class="project__description">
-                A single page application to search for all kinds of recipes to
-                try out. It also allows the user to bookmark any recipes they
-                would like to save for later.
-              </p>
-
-              <a
-                class="project__link"
-                href="https://github.com/lam-brian/hungrify"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i class="fa-brands fa-github"></i> Source Code
-              </a>
-            </div>
-            <a
-              class="project__img-link"
-              href="https://hungrify.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="images/projects/hungrify.svg"
-                alt="Hungrify live site"
-              />
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- SKILLS SECTION -->
-      <section class="skills__section section" id="skills">
-        <div class="skills__title title--lines">
-          <h2 class="skills__heading heading">Skills</h2>
-        </div>
-        <div class="skills__logos">
-          <div class="skills__logo-box">
-            <img
-              class="skills__img"
-              src="images/skills/html-logo.svg"
-              alt="html logo"
-            />
-            <p class="skills__text">HTML</p>
-          </div>
-          <div class="skills__logo-box">
-            <img
-              class="skills__img"
-              src="images/skills/css-logo.svg"
-              alt="css logo"
-            />
-            <p class="skills__text">CSS</p>
-          </div>
-          <div class="skills__logo-box">
-            <img
-              class="skills__img"
-              src="images/skills/javascript-logo.svg"
-              alt="javascript logo"
-            />
-            <p class="skills__text">JavaScript</p>
-          </div>
-          <div class="skills__logo-box">
-            <img
-              class="skills__img"
-              src="images/skills/react-logo.svg"
-              alt="react logo"
-            />
-            <p class="skills__text">React</p>
-          </div>
-          <div class="skills__logo-box">
-            <img
-              class="skills__img"
-              src="images/skills/redux-logo.svg"
-              alt="redux logo"
-            />
-            <p class="skills__text">Redux</p>
-          </div>
-        </div>
-        <div class="skills__description">
-          <p>
-            <span class="skills__category">Languages:</span> JavaScript,
-            TypeScript, HTML, CSS
+    <main>
+      <!------------------ HERO ------------------>
+      <section class="section hero">
+        <div class="hero__content">
+          <h1 class="hero__title title">Hi, I'm <span>Brian!</span></h1>
+          <p class="hero__text">
+            A Front End Developer with a passion for accessible designs and
+            turning complex problems into beautiful solutions.
           </p>
-          <p><span class="skills__category">Frameworks:</span> React</p>
-          <p>
-            <span class="skills__category">Libraries:</span> Redux, Bootstrap
-          </p>
-          <p><span class="skills__category">Design:</span> Figma</p>
-        </div>
-      </section>
-      <!-- CONTACT SECTION -->
-      <section class="contact__section section" id="contact">
-        <div class="contact__title title--lines">
-          <h2 class="contact__heading heading">Contact</h2>
-        </div>
-        <div class="contact__container">
-          <div class="contact__info">
-            <p class="contact__message">
-              Want to chat? Just shoot me an email or leave a message!
-            </p>
+          <div class="hero__btns">
             <a
-              class="contact__email"
+              href="assets/resume.pdf"
+              class="btn btn--primary"
+              target="_blank"
+              rel="noreferrer"
+              >View my resume</a
+            >
+            <a
               href="mailto:lambrian0206@gmail.com"
+              class="btn"
               target="_blank"
               rel="noreferrer"
+              >Get in touch</a
             >
-              <i class="contact__icon fa-solid fa-envelope"></i>
-              lambrian0206@gmail.com
-            </a>
           </div>
-          <form class="contact__form" name="form-submissions" netlify>
-            <label for="full-name">Full Name</label>
-            <input
-              type="text"
-              name="full-name"
-              id="full-name"
-              placeholder="John Smith"
-              required
-            />
-
-            <label for="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="me@example.com"
-              required
-            />
-
-            <label for="message">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="Hey how's your day?"
-              required
-            ></textarea>
-
-            <button class="contact__form-btn">Send Message</button>
-          </form>
+        </div>
+        <div class="hero__img">
+          <img src="/assets/images/avatar.svg" alt="man coding" />
         </div>
       </section>
+
+      <!------------------ PROJECTS ------------------>
+      <section class="section projects" id="work">
+        <h1 class="projects__title title">
+          Check out some of my <span>work!</span>
+        </h1>
+        <ul class="projects__list">
+          <li class="project">
+            <div class="project__content">
+              <h2 class="project__title">
+                RideFair - decentralized ride-sharing app
+              </h2>
+              <p class="project__description">
+                Developed using Next.js, Tailwind.css, and Mapbox for the front
+                end while utilizing Web5 technology to secure and decentralize
+                user data.
+              </p>
+              <a
+                class="project__btn btn"
+                href="https://github.com/lam-brian/RideFair"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Source Code <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div class="project__img">
+              <img
+                src="assets/images/ride-fair-img.png"
+                alt="RideFair project"
+              />
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__content">
+              <h2 class="project__title">Simplify - ed-tech app</h2>
+              <p class="project__description">
+                Built using React.js for the front end, Node.js/Express.js for
+                the backend, and MySQL for the database. Utilized NLP, web
+                scraping, and keyword extraction APIs to summarize and generate
+                flashcards for students.
+              </p>
+              <a
+                class="project__btn btn"
+                href="https://github.com/lam-brian/Simplify"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Source Code <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div class="project__img">
+              <img
+                src="assets/images/simplify-img.png"
+                alt="RideFair project"
+              />
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!------------------ ABOUT ------------------>
+      <section class="section about" id="about">
+        <div class="about__info">
+          <div class="about__img">
+            <img
+              src="/assets/images/personal-pic.jpeg"
+              alt="Brian snowboarding"
+            />
+          </div>
+          <div>
+            <h1 class="about__title title">More about <span>Brian!</span></h1>
+            <p class="about__text">
+              From finance to code! I'm a UCI graduate with a background in
+              business economics. Worked as an accountant at a top 50 accounting
+              firm before pursuing my passion for software development, and I'm
+              now a front end developer at a credit union. Outside of work, I'm
+              a gamer 👾, Netflix binger 😵‍💫, and fitness enthusiast 💪.
+            </p>
+            <div class="about__btns">
+              <a
+                href="assets/resume.pdf"
+                class="btn btn--primary"
+                target="_blank"
+                rel="noreferrer"
+                >View my resume</a
+              >
+              <a
+                href="mailto:lambrian0206@gmail.com"
+                class="btn"
+                target="_blank"
+                rel="noreferrer"
+                >Get in touch</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="about__skills">
+          <h2 class="about__title title">My <span>Skills</span></h2>
+          <ul class="skills">
+            <li class="skills__item">
+              <h3 class="skills__category">Frontend</h3>
+              <p class="skills__text">
+                JavaScript, TypeScript, HTML5, CSS3, Vue.js, React.js, Next.js
+              </p>
+            </li>
+            <li class="skills__item">
+              <h3 class="skills__category">Backend</h3>
+              <p class="skills__text">Node.js, SQL, noSQL</p>
+            </li>
+            <li class="skills__item">
+              <h3 class="skills__category">Tools</h3>
+              <p class="skills__text">REST, GraphQL, Git, Jest, Figma</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <p class="footer__copyright">
+          &copy; <span class="footer__year"></span> by Brian Lam. All rights
+          reserved
+        </p>
+      </footer>
     </main>
-    <!-- FOOTER -->
-    <footer class="footer">
-      <p class="footer__copyright">
-        &copy; <span class="footer__year"></span> by Brian Lam. All rights
-        reserved
-      </p>
-    </footer>
   </body>
 </html>
