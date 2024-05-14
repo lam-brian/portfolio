@@ -142,7 +142,8 @@ img {
 .nav__logo {
   transition: all 0.3s ease-out;
   border-radius: 50%;
-  border: 3px solid var(--color-neutral);
+  border: 3px solid var(--color-primary);
+  color: var(--color-primary);
   width: 3.4em;
   height: 3.4em;
 }
