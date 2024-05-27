@@ -325,7 +325,12 @@ img {
   font-size: 1.1em;
 }
 
-.project__btn i {
+.project__link:link,
+.project__link:visited {
+  display: inline-block;
+}
+
+.project__link i {
   font-size: 1.2em;
   margin-left: 2px;
 }
